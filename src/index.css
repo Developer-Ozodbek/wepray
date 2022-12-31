@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+    font-family: 'monserrat', sans-serif;
+}
+/* ::-webkit-scrollbar{
+    width: 1px;
+} */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient( #ff00ff, blue); 
+    border-radius: 10px;
+}
+.app, .app.cold{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.app{
+    background: url("https://wallpapercave.com/wp/wp10934490.jpg");
+}
+.app.cold{
+    background: url("https://www.teahub.io/photos/full/293-2939329_winter-lake-sweden-stockholm-wallpapers-cold-weather.jpg");
+}
+main{
+    min-height: 92.6vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0,0,0, .6));
+}
+.search-box .search-bar{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .5);
+    padding: 15px;
+    border-radius: 0 16px 0 16px;
+    transition: all .3s ease;
+    box-shadow: 0 5px rgba(0, 0, 0, .2);
+    font-size: 20px;
+}
+.search-box .search-bar::placeholder{
+    color: #000;
+}
+.search-box .search-bar:focus{
+    background: rgba(255, 255, 255, .8);
+    border-radius: 16px 0 16px 0;
+    border-bottom: 5px solid #0335ca;
+}
+.location-box{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    border: 1px solid rgba( 255, 255, 255, .3 );
+}
+.location-box .location{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 3px 3px grey;
+}
+.location-box .date{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+.weather-box{
+    text-align: center;
+}
+.weather-box .temp{
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 16px;
+    padding: 15px;
+    font-size: 100px;
+    font-weight: 900;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    border: 1px solid rgba( 255, 255, 255, .3 );
+}
+.weather-box .weather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.weather-box .weather img{
+    width: 90px;
+    filter: drop-shadow(0 0 #fff);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.prayer-container{
+    background: url('https://i.pinimg.com/originals/a3/8c/c0/a38cc005b1cef5e61a1ecb7efe0f80ef.jpg') no-repeat center;
+    background-size: cover;
 }
